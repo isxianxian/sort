@@ -1,0 +1,15 @@
+@con-bg:#FFF;
+@text-black:#555;
+@text-gray:#999;
+@text-active:#E01D20;
+// 颜色有可能改变
+// 有可能改变的就用变量，以后方便更改。
+// 多个使用的全局变量，单独使用的用局部变量。
+
+.transition(@property:all, @duration:1s, @timing-function:linear, @delay:0s){
+                -webkit-transition:@arguments;
+                -moz-transition:@arguments;
+                -ms-transition:@arguments;
+                -o-transition:@arguments;
+                transition:@arguments;
+            }
